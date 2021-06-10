@@ -1,0 +1,239 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+
+.card__tab-box{
+  background: #F0F0F4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 22px 0;
+  margin-bottom: 50px;
+}
+
+.card__tab{
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #2F3035;
+  opacity: 0.6;
+}
+
+.card__create{
+  color: #1C62CD;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+
+.card__tab.tab--active{
+  opacity: 1;
+  border-bottom: 2px solid #1C62CD;
+}
+
+.card__top-line{
+  margin-bottom: 10px;
+}
+
+.card__label-search{
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(47, 48, 53, 0.7);
+}
+
+.card__input-search{
+  margin-left: 17px;
+  background: #F0F0F4;
+  border-radius: 3px;
+  padding: 9px 37px 9px 17px;
+  border: none;
+  margin-right: 100px;
+}
+
+.card__label-pickup{
+  margin-left: 54px;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(47, 48, 53, 0.7);
+}
+
+.card__list-item{
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+  display: flex;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(47, 48, 53, 0.7);
+}
+
+.card__list-itemtitle{
+  font-size: 20px;
+  line-height: 24px;
+  color: #2F3035;
+}
+
+.card__list-navuser {
+  width: 187px;
+  margin-right: 20px;
+}
+
+.card__list-nav {
+  width: 162px;
+}
+
+.card__list-role {
+  width: 200px;
+  margin-right: 13px;
+}
+
+.card__list-user{
+  width: 170px;
+  margin-left: 22px;
+}
+
+.card__list-nav:last-child {
+  margin-right: 0;
+}
+
+.card__list-btn{
+margin-left: auto;
+}
+
+.card__list-btn button{
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  color: #FFFFFF;
+  padding: 9px 40px;
+  background: #1C62CD;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+//=======
+
+.contact {
+  padding-bottom: 100px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__form-input {
+    border: 1px solid #DFDFDF;
+    border-radius: 20px;
+    padding: 6px 17px;
+    margin-bottom: 13px;
+    width: 100%;
+    outline: none;
+
+    &::placeholder {
+      font-weight: 400;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      line-height: 28px;
+      color: #A1A1A1;
+    }
+  }
+
+.contact__form-radio{
+  display: flex;
+  justify-content: space-between;
+}
+}
+
+//====
+
+.aside-filter__content-box{
+  width: 75px;
+  margin-bottom: 10px;
+  margin-left: 35px;
+  margin-right: 85px;
+}
+
+.aside-filter__content-label{
+  font-size: 14px;
+  line-height: 17px;
+  color: #2F3035;
+  cursor: pointer;
+}
+
+.filter-style{
+  background: #fff;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #C4C4C4;
+  border-radius: 1px;
+  box-shadow: none;
+  vertical-align: -1px;
+  margin: 0 8px 0 0;
+}
+
+.filter-style:checked{
+  background: #1C62CD;
+  border: none;
+  width: 14px;
+  height: 14px;
+}
+
+//=====
+
+.header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 25px 15px;
+  width: 200px;
+  height: 100%;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 17px;
+    @extend %ubuntu-medium;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__list-item{
+    display: inline-block;
+  }
+  &__list-phone{
+    display: none;
+  }
+  &__btn{
+    display: none;
+  }
+
+}
+
+.menu__list-link {
+  background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.menu__list-link-active {
+  text-decoration:underline;
+    text-decoration-color: black;
+}
+
+@import "media";
