@@ -886,11 +886,11 @@ body {
   width: 162px; }
 
 .card__list-role {
-  width: 200px;
+  width: 230px;
   margin-right: 13px; }
 
 .card__list-user {
-  width: 170px;
+  width: 230px;
   margin-left: 22px; }
 
 .card__list-nav:last-child {
@@ -970,10 +970,10 @@ body {
             justify-content: space-between; }
 
 .aside-filter__content-box {
-  width: 75px;
+  width: 54px;
   margin-bottom: 10px;
-  margin-left: 35px;
-  margin-right: 85px; }
+  margin-left: 44px;
+  margin-right: 78px; }
 
 .aside-filter__content-label {
   font-size: 14px;
